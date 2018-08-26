@@ -1,0 +1,32 @@
+.wholeContent {
+  width: 58.01104972vw;
+  height: 62.41134752vh;
+  margin-left: 20.44198895vw;
+  margin-top: 20.03546099vh;
+  box-shadow: #eaeaea 0px 0px 30px;
+  padding: 15px;
+}
+.allbuttons {
+  margin-left: 1.3121547vw;
+  margin-top: 3.36879433vh;
+}
+input {
+  width: 18.37016575vw;
+  height: 4.07801418vh;
+}
+button {
+  background-color: #59a7ff;
+  color: #ddf0ff;
+  border: 0;
+  width: 5.31767956vw;
+  height: 5.31914894vh;
+}
+#usetext {
+  margin-top: 5.31914894vh;
+}
+span {
+  color: red;
+}
+p {
+  text-indent: 2em;
+}

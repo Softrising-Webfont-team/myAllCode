@@ -1,0 +1,52 @@
+.Csizes(@a,@b,@c,@d){
+	width: @a/@c*100vw;
+	height: @b/@d*100vh;
+}
+.lineHeight(@a,@c){
+    line-height: @a/@c*100vh;
+}
+.marginTop(@a,@c){
+    margin-top: @a/@c*100vh;
+}
+.Cpositions(@a,@b,@c,@d){
+    margin-left: @a/@c*100vw;
+    margin-top: @b/@d*100vh;
+}
+.Ccolors(@a,@b){
+    background-color: @a;
+    color: @b;
+}
+.Cfonts(@a,@b,@c){
+    font-size: @a/@c*100vh;
+    font-family: @b;
+}
+@cTextcolor:#ffffff ;
+@cBgcolor: #108ee9 ;
+@Twidth:  1448;
+@Theight: 564;
+
+.wholeContent{
+    .Csizes(840,352,@Twidth,@Theight);
+    .Cpositions(296,113,@Twidth,@Theight);
+    box-shadow: #eaeaea 0px 0px 30px;
+    padding: 15px;
+}
+.allbuttons{
+   .Cpositions(19,19,@Twidth,@Theight);
+}
+input{
+    .Csizes(266,23,@Twidth,@Theight);
+}
+button{
+    .Ccolors(#59a7ff,#ddf0ff);
+    border: 0;
+    .Csizes(77,30,@Twidth,@Theight);
+    
+}
+#usetext{
+   .marginTop(30,@Theight); 
+}
+span{
+    color: red;
+}
+p{text-indent: 2em;}
