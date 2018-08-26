@@ -1,0 +1,85 @@
+.Csizes(@a,@b,@c,@d){
+	width: @a/@c*100vw;
+	height: @b/@d*100vh;
+}
+.lineHeight(@a,@c){
+    line-height: @a/@c*100vh;
+}
+.marginTop(@a,@c){
+    margin-top: @a/@c*100vh;
+}
+.Cpositions(@a,@b,@c,@d){
+    margin-left: @a/@c*100vw;
+    margin-top: @b/@d*100vh;
+}
+.Ccolors(@a,@b){
+    background-color: @a;
+    color: @b;
+}
+.Cfonts(@a,@b,@c){
+    font-size: @a/@c*100vh;
+    font-family: @b;
+}
+a{text-decoration:underline;} 
+a.a1{color: #ada7a7;} 
+a.a1:hover{color:rgb(0, 174, 255)} 
+
+
+@cTextcolor:#ffffff ;
+@cBgcolor: #108ee9 ;
+@Twidth:  1242;
+@Theight: 2208;
+
+.walletBottom{
+    text-align: center;
+    .Csizes(793,164,@Twidth,@Theight);
+    .Ccolors(@cBgcolor,@cTextcolor);
+    .Cfonts(61,courier,@Theight);
+    a {
+        text-decoration: none;
+        color:@cTextcolor;
+        .Cfonts(61,courier,@Theight);
+    }
+    border-radius: 15px;
+    cursor: pointer;
+    .lineHeight(164, @Theight);
+}	
+
+#creatwallet{
+    .Cpositions(227 ,843,@Twidth ,@Theight);
+}
+#entrywallet{
+    .Cpositions(227 ,151,@Twidth ,@Theight);
+}
+#leaf{
+    .Csizes(256,184,@Twidth,@Theight);
+    .Cpositions(500 ,660,@Twidth ,@Theight);
+}
+#creatWalletWarnOne{
+    .marginTop(78,@Theight);
+    .Cfonts(61,courier,@Theight);
+    color: #2c2929;
+    text-align: center;
+}
+#creatWalletWarnTwo{
+    .Cfonts(61,courier,@Theight);
+    .lineHeight(83, @Theight);
+    .marginTop(68,@Theight);
+    color: #a9a6a6;
+    text-align: center;
+}
+
+#creatKey{
+    .Cpositions(236 ,160,@Twidth ,@Theight);
+    text-align: center;
+}
+
+#backInNewWallet{
+    .marginTop(160,@Theight);
+    .Cfonts(61,courier,@Theight);
+    text-align: center;
+    color: #ada7a7;
+}
+
+  
+   

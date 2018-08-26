@@ -1,0 +1,68 @@
+a {
+  text-decoration: underline;
+}
+a.a1 {
+  color: #ada7a7;
+}
+a.a1:hover {
+  color: #00aeff;
+}
+.walletBottom {
+  text-align: center;
+  width: 63.84863124vw;
+  height: 7.42753623vh;
+  background-color: #108ee9;
+  color: #ffffff;
+  font-size: 2.76268116vh;
+  font-family: courier;
+  border-radius: 15px;
+  cursor: pointer;
+  line-height: 7.42753623vh;
+}
+.walletBottom a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2.76268116vh;
+  font-family: courier;
+}
+#creatwallet {
+  margin-left: 18.27697262vw;
+  margin-top: 38.17934783vh;
+}
+#entrywallet {
+  margin-left: 18.27697262vw;
+  margin-top: 6.83876812vh;
+}
+#leaf {
+  width: 20.61191626vw;
+  height: 8.33333333vh;
+  margin-left: 40.25764895vw;
+  margin-top: 29.89130435vh;
+}
+#creatWalletWarnOne {
+  margin-top: 3.5326087vh;
+  font-size: 2.76268116vh;
+  font-family: courier;
+  color: #2c2929;
+  text-align: center;
+}
+#creatWalletWarnTwo {
+  font-size: 2.76268116vh;
+  font-family: courier;
+  line-height: 3.75905797vh;
+  margin-top: 3.07971014vh;
+  color: #a9a6a6;
+  text-align: center;
+}
+#creatKey {
+  margin-left: 19.00161031vw;
+  margin-top: 7.24637681vh;
+  text-align: center;
+}
+#backInNewWallet {
+  margin-top: 7.24637681vh;
+  font-size: 2.76268116vh;
+  font-family: courier;
+  text-align: center;
+  color: #ada7a7;
+}
