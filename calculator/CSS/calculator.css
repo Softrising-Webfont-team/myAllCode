@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  border: 1px solid grey;
+  margin: 0 auto;
+}
+table {
+  border-collapse: collapse;
+  top: 618px;
+}
+.btn {
+  width: 179px;
+  height: 146px;
+  color: #a8aaae;
+  background-color: #ffffff;
+  font-size: 35px;
+  text-align: center;
+  vertical-align: middle;
+  border: 0.3px solid #d7d8d9;
+}
+.showArea {
+  width: 721px;
+  height: 618px;
+  background-color: #f1f3f3;
+  border: 0.3px solid #d7d8d9;
+  border-collapse: collapse;
+  text-align: right;
+}
+#output {
+  width: 721px;
+  height: 309px;
+  color: #181818;
+  font-size: 70px;
+  text-align: right;
+}
+#answers {
+  width: 721px;
+  height: 309px;
+  color: #a8aaae;
+  font-size: 70px;
+  top: 309px;
+  text-align: right;
+}
+textarea {
+  border-color: #ffffff;
+}
