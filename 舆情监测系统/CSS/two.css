@@ -1,0 +1,280 @@
+.containsTwo {
+  width: 100%;
+  top: 80px;
+  position: absolute;
+  z-index: 1;
+  background-color: #dbdedd;
+  padding: 0.5%;
+  overflow-x: hidden;
+}
+.keySearch {
+  height: 85px;
+  width: 100%;
+  padding-left: 7.91666667vw;
+}
+.keySearch .searchPartSpace {
+  float: left;
+  margin-right: 11.66666667vw;
+  margin-top: 17px;
+}
+.keySearch .searchPartSpace .fixedPart {
+  width: 5.625vw;
+  height: 45px;
+  line-height: 45px;
+  background-color: #b30301;
+  color: #ebffff;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 45px;
+}
+.keySearch .searchPartSpace input {
+  height: 43px;
+  line-height: 43px;
+  width: 10.20833333vw;
+}
+.keySearch .searchPartSpace ::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #959595;
+  text-align: center;
+}
+.keySearch .searchPartSpace #chooseTime {
+  width: 5.9375vw;
+  height: 45px;
+}
+.keySearch .searchPartSpace #chooseTime input {
+  height: 45px;
+  line-height: 45px;
+  width: 4.21875vw;
+  text-align: center;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+}
+.keySearch .searchPartSpace #chooseTime select {
+  height: 45px;
+  line-height: 45px;
+  width: 1.5625vw;
+  border: 0;
+  outline: none;
+}
+.keySearch .searchPartSpace #chooseTime select :hover #chooseTime {
+  height: 166px;
+}
+.keySearch .searchPartSpace #chooseTime dl {
+  height: 0;
+  overflow-y: hidden;
+  transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: height 0.5s;
+  /* Safari and Chrome */
+  -o-transition: height 0.5s;
+  /* Opera */
+  position: relative;
+  z-index: 9;
+}
+.keySearch .searchPartSpace #chooseTime dl dd {
+  color: #b2b1b0;
+  background-color: #eeedeb;
+  font-size: 15px;
+  height: 20px;
+  text-align: center;
+  width: 5.9375vw;
+}
+.keySearch .searchPartSpace #chooseTime dd:hover {
+  color: #ffffff;
+  background-color: #dca4a3;
+}
+.keySearch .searchPartSpace #chooseTime input,
+.keySearch .searchPartSpace #chooseTime select,
+.keySearch .searchPartSpace #chooseTime dl {
+  float: left;
+}
+.keySearch .searchPartSpace .fixedPart,
+.keySearch .searchPartSpace input,
+.keySearch .searchPartSpace #chooseTime {
+  float: left;
+}
+@media screen and (max-width: 300px) {
+  .keySearch {
+    height: 85px;
+    width: 100%;
+    padding-left: 2.70833333vw;
+  }
+  .keySearch .searchPartSpace {
+    float: left;
+    margin-right: 6.45833333vw;
+    margin-top: 17px;
+  }
+  .keySearch .searchPartSpace .fixedPart {
+    width: 5.625vw;
+    height: 45px;
+    line-height: 45px;
+    background-color: #b30301;
+    color: #ebffff;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 45px;
+  }
+  .keySearch .searchPartSpace input {
+    height: 43px;
+    line-height: 43px;
+    width: 10.20833333vw;
+  }
+  .keySearch .searchPartSpace ::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #959595;
+    text-align: center;
+  }
+  .keySearch .searchPartSpace #chooseTime {
+    width: 5.9375vw;
+    height: 45px;
+  }
+  .keySearch .searchPartSpace #chooseTime input {
+    height: 45px;
+    line-height: 45px;
+    width: 4.21875vw;
+    text-align: center;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+  }
+  .keySearch .searchPartSpace #chooseTime select {
+    height: 45px;
+    line-height: 45px;
+    width: 1.5625vw;
+    border: 0;
+    outline: none;
+  }
+  .keySearch .searchPartSpace #chooseTime select :hover #chooseTime {
+    height: 166px;
+  }
+  .keySearch .searchPartSpace #chooseTime dl {
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    /* Firefox 4 */
+    -webkit-transition: height 0.5s;
+    /* Safari and Chrome */
+    -o-transition: height 0.5s;
+    /* Opera */
+    position: relative;
+    z-index: 9;
+  }
+  .keySearch .searchPartSpace #chooseTime dl dd {
+    color: #b2b1b0;
+    background-color: #eeedeb;
+    font-size: 15px;
+    height: 20px;
+    text-align: center;
+    width: 5.9375vw;
+  }
+  .keySearch .searchPartSpace #chooseTime dd:hover {
+    color: #ffffff;
+    background-color: #dca4a3;
+  }
+  .keySearch .searchPartSpace #chooseTime input,
+  .keySearch .searchPartSpace #chooseTime select,
+  .keySearch .searchPartSpace #chooseTime dl {
+    float: left;
+  }
+  .keySearch .searchPartSpace .fixedPart,
+  .keySearch .searchPartSpace input,
+  .keySearch .searchPartSpace #chooseTime {
+    float: left;
+  }
+}
+.concrete {
+  top: 165px;
+  margin: 0 2.08333333vw;
+}
+.concrete .listSpeaking {
+  width: 68.95833333vw;
+  height: 674px;
+  margin-left: -10px;
+  background: white;
+  position: relative;
+}
+.concrete .listSpeaking .titleLittle {
+  position: fixed;
+  width: 92%;
+  height: 42px;
+  margin-left: 4%;
+  padding-top: 11px;
+  margin-right: 4%;
+  font-size: 18px;
+  text-align: center;
+  position: absolute;
+  border-bottom: 3px solid #bdbdbd;
+}
+.concrete .listSpeaking .titleLittle img,
+.concrete .listSpeaking .titleLittle .smallTitle,
+.concrete .listSpeaking .titleLittle .iconfont {
+  float: left;
+  margin-right: 11px;
+  height: 32px;
+}
+.concrete .Key {
+  margin-left: 2.60416667vw;
+  width: 22.39583333vw;
+  height: 644px;
+  background-color: #f8e6e6;
+  color: #b60905;
+  text-align: center;
+  padding-top: 25px;
+}
+.concrete .Key dt {
+  font-weight: bold;
+  color: #b70003;
+  font-size: 1.77083333vw;
+  margin-bottom: 38px;
+}
+.concrete .Key dd {
+  font-size: 22px;
+  margin-bottom: 28px;
+  cursor: pointer;
+}
+.concrete .listSpeaking,
+.concrete .Key {
+  float: left;
+}
+.concreteList {
+  margin-top: 42px;
+  width: 92%;
+  height: 42px;
+  position: absolute;
+  margin-left: 4%;
+  padding-top: 11px;
+  margin-right: 4%;
+  font-size: 18px;
+}
+.concreteList dl {
+  padding-top: 30px;
+}
+.concreteList dl dd {
+  position: relative;
+  float: left;
+  width: 100%;
+  cursor: pointer;
+}
+.concreteList dl dd .hotevet {
+  width: 75%;
+  position: absolute;
+  color: #020202;
+  height: 31px;
+  line-height: 31px;
+  font-size: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.concreteList dl dd .hottime {
+  font-size: 15px;
+  color: #6f6f6f;
+  float: right;
+  height: 31px;
+  line-height: 31px;
+}

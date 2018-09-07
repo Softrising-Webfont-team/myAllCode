@@ -1,0 +1,156 @@
+@Twidth: 1920*0.01vw;
+
+.RHeight(@a){
+	height: @a;
+	line-height: @a;
+}
+.compadding(){
+	width: 92%;
+	height: 37px;
+	line-height: 37px;
+	position: absolute;
+	margin-left: 4%;
+	margin-right: 4%;
+	font-size: 18px;
+}
+
+.hotDOC(){
+		.titleLittle{
+		.compadding();
+		.smallTitle{
+			position: relative;
+			.domspeading{
+				color: #ff0000;
+				cursor: pointer;
+				width: 400/@Twidth;
+				position: absolute;
+				overflow: hidden;
+	            white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.more{
+				float: right;
+				color: #b20f13;
+				cursor: pointer;
+			}
+		}
+		
+		border-bottom: 3px solid #bdbdbd;
+		
+	}
+	.speak{
+		margin-top: 55px;
+		.compadding();
+		dl{
+			margin-top: 5px;
+			cursor: pointer;
+			dt{
+				font-size: 19px;
+				height: 19px;
+				overflow: hidden;
+	            white-space: nowrap;
+				text-overflow: ellipsis;
+				line-height: 19px;
+			}
+			dd{
+				font-size: 15px;
+				color: #6f6f6f;
+			}
+		}
+	}
+}
+
+.containsThree{
+	width: 100%;
+	top: 80px;
+	position: absolute;
+	z-index: 1;
+	background-color: #dbdedd;
+	padding: 0.5%;
+	overflow-x: hidden;
+}
+
+.theoryAndRelative{
+	.RHeight(40px);
+	width: 77*2px;
+	font-size: 18px;
+	background-color: #d3d3d5;
+	color: #2c3e50;
+	margin-top: 25px;
+	margin-left: 39/@Twidth;
+	dd{
+		width: 77px;
+		float: left;
+		text-align: center;
+		cursor: pointer;
+	}
+}
+.picture3DAndHot{
+	width: (1920-39-42)/@Twidth;
+	margin: 0 auto;
+	height: 464px;
+	
+	#picture3D{
+		width: 1449/@Twidth;
+		height: 100%;
+		margin: 0 auto;
+		background-color: #ffffff;
+	}
+	.wordHot{
+		margin-left: 36/@Twidth;
+		width: 326/@Twidth;
+		background-color: #ffffff;
+		height: 100%;
+		table{
+			//border-collapse:collapse;
+			color: #2c3e50;
+			width: (178+104)/326*100%;
+			margin: 0 auto;
+			text-align: center;
+			caption{
+				font-size: 21px;
+				color: #2c3e50;
+				font-weight: bold;
+				.RHeight(44px);
+				cursor: pointer;
+			}
+			th{
+				background: #e2d2d2;
+				border: 1px solid #808080;
+				height: 38px;
+				cursor: pointer;
+				// overflow-x: hidden;
+			}
+			td{
+				cursor: pointer;
+				background: #f8e6e6;
+				height: 38px;
+				border: 1px solid #808080;
+				// overflow-y: hidden;
+			}
+		}
+	}
+	#picture3D,.wordHot{
+		float: left;
+	}
+}
+
+.domAndSpeak{
+	width: (1920-39-42)/@Twidth;
+	margin: 0 auto;
+	height: 370px;
+	margin-top: 26px;
+	.xiSpeaking,.hotDoc{
+		float: left;
+		height: 100%;
+		width: 887/@Twidth;
+		background: #ffffff;
+		position: relative;
+		.hotDOC();
+	}
+	.hotDoc{
+		margin-right: 37/@Twidth;
+	}
+}
+
+

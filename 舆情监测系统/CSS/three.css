@@ -1,0 +1,150 @@
+.containsThree {
+  width: 100%;
+  top: 80px;
+  position: absolute;
+  z-index: 1;
+  background-color: #dbdedd;
+  padding: 0.5%;
+  overflow-x: hidden;
+}
+.theoryAndRelative {
+  height: 40px;
+  line-height: 40px;
+  width: 154px;
+  font-size: 18px;
+  background-color: #d3d3d5;
+  color: #2c3e50;
+  margin-top: 25px;
+  margin-left: 2.03125vw;
+}
+.theoryAndRelative dd {
+  width: 77px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.picture3DAndHot {
+  width: 95.78125vw;
+  margin: 0 auto;
+  height: 464px;
+}
+.picture3DAndHot #picture3D {
+  width: 75.46875vw;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.picture3DAndHot .wordHot {
+  margin-left: 1.875vw;
+  width: 16.97916667vw;
+  background-color: #ffffff;
+  height: 100%;
+}
+.picture3DAndHot .wordHot table {
+  color: #2c3e50;
+  width: 86.50306748%;
+  margin: 0 auto;
+  text-align: center;
+}
+.picture3DAndHot .wordHot table caption {
+  font-size: 21px;
+  color: #2c3e50;
+  font-weight: bold;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+}
+.picture3DAndHot .wordHot table th {
+  background: #e2d2d2;
+  border: 1px solid #808080;
+  height: 38px;
+  cursor: pointer;
+}
+.picture3DAndHot .wordHot table td {
+  cursor: pointer;
+  background: #f8e6e6;
+  height: 38px;
+  border: 1px solid #808080;
+}
+.picture3DAndHot #picture3D,
+.picture3DAndHot .wordHot {
+  float: left;
+}
+.domAndSpeak {
+  width: 95.78125vw;
+  margin: 0 auto;
+  height: 370px;
+  margin-top: 26px;
+}
+.domAndSpeak .xiSpeaking,
+.domAndSpeak .hotDoc {
+  float: left;
+  height: 100%;
+  width: 46.19791667vw;
+  background: #ffffff;
+  position: relative;
+}
+.domAndSpeak .xiSpeaking .titleLittle,
+.domAndSpeak .hotDoc .titleLittle {
+  width: 92%;
+  height: 37px;
+  line-height: 37px;
+  position: absolute;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: 18px;
+  border-bottom: 3px solid #bdbdbd;
+}
+.domAndSpeak .xiSpeaking .titleLittle .smallTitle,
+.domAndSpeak .hotDoc .titleLittle .smallTitle {
+  position: relative;
+}
+.domAndSpeak .xiSpeaking .titleLittle .smallTitle .domspeading,
+.domAndSpeak .hotDoc .titleLittle .smallTitle .domspeading {
+  color: #ff0000;
+  cursor: pointer;
+  width: 20.83333333vw;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.domAndSpeak .xiSpeaking .titleLittle .smallTitle .more,
+.domAndSpeak .hotDoc .titleLittle .smallTitle .more {
+  float: right;
+  color: #b20f13;
+  cursor: pointer;
+}
+.domAndSpeak .xiSpeaking .speak,
+.domAndSpeak .hotDoc .speak {
+  margin-top: 55px;
+  width: 92%;
+  height: 37px;
+  line-height: 37px;
+  position: absolute;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: 18px;
+}
+.domAndSpeak .xiSpeaking .speak dl,
+.domAndSpeak .hotDoc .speak dl {
+  margin-top: 5px;
+  cursor: pointer;
+}
+.domAndSpeak .xiSpeaking .speak dl dt,
+.domAndSpeak .hotDoc .speak dl dt {
+  font-size: 19px;
+  height: 19px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 19px;
+}
+.domAndSpeak .xiSpeaking .speak dl dd,
+.domAndSpeak .hotDoc .speak dl dd {
+  font-size: 15px;
+  color: #6f6f6f;
+}
+.domAndSpeak .hotDoc {
+  margin-right: 1.92708333vw;
+}

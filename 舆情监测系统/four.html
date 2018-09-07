@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>chongqing_daily_4</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/com.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/four.css">
+</head>
+<body>
+	<div class="comHead">
+		<div class="comTop">
+			<div id="titleWord">重庆日报理论热点智能分析系统</div>
+			<div id="searchWord">
+				<input type="text" name="searchKeyWord" placeholder="请输入关键字" style="width: 240px; height: 24px">
+				<i class="iconfont">&#xe618;</i>
+			</div>
+			<div id="login">
+				<span>登录</span> 
+				<i class="iconfont">&#xe60e;</i>
+			</div>
+		</div>
+		<div class="comList">
+			<dl>
+				<a href="one.html">首页</a>
+				<a href="two.html">习近平讲话</a>
+				<a href="three.html">党媒理论热词</a>
+				<a href="four.html" style="background-color: #efefef;color: #b20106;border-bottom: 3px solid #b20106;">区县热点</a>
+				<a href="five.html">数据智能分析</a>
+			</dl>
+		</div>
+	</div>
+	<div class="containsFour">
+		<div class="chooseInput">
+			<input type="text" name="" id="thinkings" value="思想认识" placeholder="请输入理论词">
+			
+			<input type="text" name="" id="reportMaking" value="生成热点报告">
+			
+		</div>
+		<div class="checkbos">
+			<input type="text" name="" id="choseConty" value="选择区县">
+			<dl id="contyOption">
+				<dd><input type="checkbox" name="category" value="渝中区">渝中区</dd>
+				<dd><input type="checkbox" name="category" value="江北区">江北区</dd>
+				<dd><input type="checkbox" name="category" value="渝北区">渝北区</dd>
+				<dd><input type="checkbox" name="category" value="涪陵区">涪陵区</dd>
+				<dd><input type="checkbox" name="category" value="合川区">合川区</dd>
+				<dd><input type="checkbox" name="category" value="沙坪坝区">沙坪坝区</dd>
+				<dd><input type="checkbox" name="category" value="武隆区">武隆区</dd>
+			</dl>
+		</div>
+		<div class="listAndCart">
+			<div class="listPage">
+				<ul id="wordList">
+					<li style="background: #e9b3b3;">思想认识</li>
+					<li>正能量</li>
+					<li>“一带一路”</li>
+					<li>依法行政</li>
+					<li>文化建设</li>
+					<li>供给侧结构性改革</li>
+					<li>现代化</li>
+					<li>绿水青山</li>
+					<li>长江经济带</li>
+					<li>知识产权</li>
+				</ul>
+				<ul id="pageChose">
+					<li>&#8249;</li>
+					<li style="background: #00a1d6;color: #ffffff;">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>&#8250;</li>
+				</ul>
+			</div>
+			<div class="echatsHot">
+				<div id="barChart"></div>
+				<div class="cqHot">
+					<div id="angle"></div>
+					<table id="wordForm" style="border-collapse:collapse;">
+						<tr>
+							<td>渝中区</td>
+							<td>江北区</td>
+							<td>渝北区</td>
+							<td>涪陵区</td>
+						</tr>
+
+
+
+
+
+
+						<tr>
+							<td>合川区</td>
+							<td>沙坪坝区</td>
+							<td>武隆区</td>
+						</tr>
+					</table>
+					<!-- <ul id="wordForm">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+ <script type="text/javascript" src="./JS/echarts.js"></script>
+<script type="text/javascript" src="./JS/four.js"></script>
+</html>

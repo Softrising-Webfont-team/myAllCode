@@ -1,0 +1,160 @@
+@Twidth: 1920*0.01vw;
+
+.RHeight(@a){
+	height: @a;
+	line-height: @a;
+}
+.containsFour{
+	width: 100%;
+	top: 80px;
+	position: absolute;
+	z-index: 1;
+	background-color: #dbdedd;
+	padding: 0.5%;
+	overflow-x: hidden;
+}
+
+
+.chooseInput{
+	height: 59px;
+	width: (1920-42-39)/@Twidth;
+	margin: 0 auto;
+	margin-top: 15px;
+	input{
+		border: 1px solid #a70709;
+		color: #5b5677;
+	}
+	#thinkings{
+		.RHeight(42px);
+		width: 302/@Twidth;
+		background: #ffffff;
+		float: left;
+		padding-left: 15px;
+	}
+	#reportMaking{
+		.RHeight(42px);
+		width: 302/@Twidth;
+		background: #ffffff;
+		float: right;
+		padding-left: 15px;
+	}
+}
+.checkbos{
+	width: 195/@Twidth;
+	position: relative;
+	z-index: 7;
+	margin: 0 auto;
+	top: -59px;
+	height: 0;
+	#choseConty{
+		.RHeight(42px);
+		width: 153px;
+		margin: 0 auto;
+		padding-left: 42px;
+		border: 1px solid #a70709;
+	}
+	#contyOption{
+		width: 195px;
+		color: #2c3e50;
+		background-color: #eeedeb;
+		text-align: center;
+		height: 0;
+		overflow-y: hidden;
+		transition: height 0.5s;
+		-moz-transition: height 0.5s; /* Firefox 4 */
+		-webkit-transition: height 0.5s; /* Safari and Chrome */
+		-o-transition: height 0.5s; /* Opera */
+
+		input{
+			margin-right: 21px;
+		}
+		dd{
+			height: 0;
+			.RHeight(30px);
+			font-size: 13px;
+		}
+	}
+}
+.listAndCart{
+	height: 693px;
+	width: (1920-42-39)/@Twidth;
+	margin: 0 auto;
+	.listPage{
+		width: 332/@Twidth;
+		background-color: #ffffff;
+		height: 693px;
+		#wordList{
+			padding-top: 11px;
+			margin-left: 22/@Twidth;
+			li{
+				list-style: none;
+				width: 292/@Twidth;
+				text-align: center;
+				.RHeight(61px);
+				color: black;
+				font-size: 21/@Twidth;
+				font-weight: normal;
+				border-bottom: 2px solid #cccccc;
+			}
+		}
+		#pageChose{
+			padding-top: 11px;
+			margin-left: 22/@Twidth;
+			color: #2c3e50;
+			li{
+				background-color: #f6f9fa;
+				list-style: none;
+				width: 30/@Twidth;
+				.RHeight(30px);
+				float: left;
+				text-align: center;
+			}
+		}
+	}
+	.echatsHot{
+		margin-left: 85/@Twidth;
+		width: 1418/@Twidth;
+		background-color: #ffffff;
+		height: 693px;
+		#barChart{
+			width: 1358/@Twidth;
+			margin: 0 auto;
+			height: 480px;
+		}
+		.cqHot{
+			width: 1358/@Twidth;
+			margin: 0 auto;
+			#angle:before{
+				content: "重庆热点";
+				font-size:20px;
+				display:block;
+				color:#ffffff;
+				height: 0;
+				width: 255px;
+				line-height:55px;
+				padding-left:20px;
+				border-width: 0px 55px 55px 0px;
+				border-style: none solid solid;
+				border-color: transparent transparent #b30000;
+			}
+			#wordForm{
+				width: 100%;
+				// li{
+				td{
+					list-style: none;
+					text-align: center;
+					font-size: 17px;
+					.RHeight(65px);
+					width: 24.5%;
+					//color: #2c3e50;
+					background-color: #f8e6e6;
+					border: 1px solid #808080;
+					float: left;
+				}
+			}
+		}
+	}
+	.listPage,.echatsHot{
+		float: left;
+	}
+}
