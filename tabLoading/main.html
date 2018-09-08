@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+	<title>tab切换+loading+下拉效果</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/main.css">
+</head>
+<body>
+	<div id="content">
+		<div class="choice">
+			<input checked type="radio" name="choice" id="one">
+			<label for="one">人物介绍</label>
+			<input type="radio" name="choice" id="two">
+			<label for="two">主要作品</label>
+			<input type="radio" name="choice" id="three">
+			<label for="three">人物肖像</label>
+		
+			<div class="describe firstone">
+				<div class="contains">朱自清（1898年11月22日—1948年8月12日），原名自华，号秋实，后改名自清，字佩弦。原籍浙江绍兴，出生于江苏省东海县（今连云港市东海县平明镇）。现代杰出的散文家、诗人、学者、民主战士。
+
+			              1916年中学毕业并成功考入北京大学预科。1919年开始发表诗歌。1928年第一本散文集《背影》出版。1932年7月，任清华大学中国文学系主任。1934年，出版《欧游杂记》和《伦敦杂记》。1935年，出版散文集《你我》。
+
+			                   1948年8月12日因胃穿孔病逝于北平，年仅50岁。
+			    </div>
+				<div class="contains">
+					<ul>
+						<li>踪迹</li>
+						<li>背影</li>
+						<li>你我</li>
+						<li>欧游杂记</li>
+						<li>伦敦杂记</li>
+						<li>标准与尺度</li>
+					</ul>
+				</div>
+				<div class="contains">
+					<img src="./img/person-1.jpg">
+				</div>
+			</div>
+			<div class="describe secondone" style="display: none;">
+				<div class="contains">茅盾(1896年7月4日-1981年3月27日)，原名沈德鸿，笔名茅盾、郎损、玄珠、方璧、止敬、蒲牢、微明、沈仲方、沈明甫等，字雁冰，浙江省嘉兴市桐乡市人。
+
+茅盾出生在一个思想观念颇为新颖的家庭里，从小接受新式的教育。后考入北京大学预科，毕业后入商务印书馆工作，从此走上了改革中国文艺的道路，他是新文化运动的先驱者、中国革命文艺的奠基人。
+
+茅盾同时也是中国现代著名作家、文学评论家、文化活动家以及社会活动家。代表作有小说《子夜》、《春蚕》和文学评论《夜读偶记》。1981年3月14日，茅盾自知病将不起，将稿费25万元人民币捐出设立茅盾文学奖，以鼓励当代优秀长篇小说的创作。
+
+
+			    </div>
+				<div class="contains">
+					<ul>
+						<li>白杨礼赞</li>
+						<li>风景谈</li>
+						<li>卖豆腐的哨子</li>
+						<li>人造丝</li>
+						<li>全运会印象</li>
+						<li>车中一瞥</li>
+					</ul>
+				</div>
+				<div class="contains">
+					<img src="./img/people-2.png">
+				</div>
+			</div>
+		</div>
+		<div class="buttonPart">
+			<div id="sure">确定</div>
+			<div class="selectPeople">
+				<div id="person">选择人物</div>
+				<dl id="authors">
+					<dd>朱自清</dd>
+					<dd>矛盾</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div id="loadings" style="display: none;">
+		<div class="spinner">
+		  <div class="bounce1"></div>
+		  <div class="bounce2"></div>
+		  <div class="bounce3"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./JS/main.js"></script>
+</html>
+
+ 
+<!-- 
+<!DOCTYPE html>   <html>   <head>   
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+	 <title>input:checked实现tab切换</title>  
+	  <style>  
+	   input{   opacity: 0;/*隐藏input的选择框*/   }   
+	   label{   cursor: pointer;/*鼠标移上去变成手状*/   float: left;   }  
+	 label:hover{   background: #eee;   }  
+	  input:checked+label{   color: red;   }   /*选择前面有.tabs input:nth-of-type(x):checked的.panels .panel:nth-child(x)*/  
+	   .tabs input:nth-of-type(1):checked~.panels .panel:nth-child(2),  .tabs input:nth-of-type(2):checked~.panels .panel:nth-child(1)
+	   {   opacity: 1;   }  
+	     .panel{   opacity: 0;   position: absolute;/*使内容区域位置一样*/   } 
+	       </style> 
+	         </head> 
+	           <body> 
+	             <div class="tabs">   
+	            <input checked id="one" name="tabs" type="radio">   
+	              <label for="one">标题一</label>     
+	           <input id="two" name="tabs" type="radio">   
+	              <label for="two">标题二</label>  
+
+                    <div class="panels">   
+                      <div class="panel">  
+                	     内容一 
+	                    </div>   
+	                    <div class="panel">    
+	                		 内容二    
+	     				</div>   
+      		 		</div>  
+        </div>  
+         </body>  
+          </html>     -->
