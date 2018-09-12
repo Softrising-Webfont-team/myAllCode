@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 1517px;
+  margin: 0 auto;
+}
+.searchs {
+  margin-top: 117px;
+}
+.searchs span {
+  margin-left: 77px;
+  width: 242px;
+  height: 100px;
+}
+.searchs span img {
+  width: 242px;
+  height: 100px;
+}
+.searchs input {
+  margin-top: 20px;
+  width: 786px;
+  height: 65px;
+  line-height: 65px;
+  border: 1px solid #a2a2a2;
+  color: #585858;
+  font-size: 27px;
+  outline: none;
+}
+.searchs #enter {
+  margin-top: 20px;
+  width: 158px;
+  height: 69px;
+  line-height: 69px;
+  color: #fff8e7;
+  background: #b20200;
+  font-size: 27px;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+.searchs #allState {
+  margin-top: 20px;
+  margin-left: 17px;
+  width: 158px;
+  height: 68px;
+  line-height: 68px;
+  color: #c41f1c;
+  border: 1px solid #c41f1c;
+  background: #ffffff;
+  font-size: 27px;
+  text-align: center;
+  outline: none;
+}
+.searchs span,
+.searchs input,
+.searchs #enter,
+.searchs #allState {
+  float: left;
+}
+.searchs,
+.express {
+  float: left;
+}
+.express {
+  border: 1px solid #ced1df;
+}
+.express .word {
+  width: 1300px;
+}
+.express .word .worddetail {
+  padding-left: 33px;
+}
+.express .word .worddetail .wordName {
+  height: 120px;
+  line-height: 120px;
+  font-size: 53px;
+  color: #020202;
+  border-bottom: 1px solid #ced1df;
+}
+.express .word .worddetail table {
+  width: 1267px;
+  border-bottom: 1px solid #ced1df;
+  padding: 22px 0;
+  font-size: 30px;
+}
+.express .word .concrete .concreteTitle .numbers {
+  width: 67px;
+  height: 42px;
+  font-size: 30px;
+  color: #ffffff;
+  background: #b20200;
+}
+.express .word .concrete .concreteTitle .numbers span {
+  float: right;
+}
+.express .word .concrete .concreteTitle span {
+  font-size: 30px;
+  font-family: DFKai-SB;
+}
+.express .word .concrete .concreteTitle .numbers,
+.express .word .concrete .concreteTitle span {
+  float: left;
+}
+.express .word .concrete p {
+  font-size: 23px;
+  text-indent: 2em;
+  color: #4f4f4f;
+  padding: 36px 35px 66px;
+}
+.express .word .concrete .concreteTitle,
+.express .word .concrete p {
+  float: left;
+}
+.express .indexs {
+  width: 200px;
+}
+.express .indexs ul {
+  position: fixed;
+  top: 55vh;
+  width: 180px;
+}
+.express .indexs ul li {
+  list-style: none;
+  font-size: 25px;
+  line-height: 45px;
+  float: left;
+}
+.express .indexs ul li div {
+  min-height: 13px;
+  min-width: 13px;
+  border-radius: 50%;
+  background: grey;
+  margin: 20px;
+}
+.express .indexs ul li a {
+  text-decoration: none;
+  color: #808080;
+}
+.express .indexs ul li div,
+.express .indexs ul li a {
+  float: left;
+}
+.express .word,
+.express .indexs {
+  float: left;
+}

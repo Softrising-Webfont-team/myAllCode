@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../Icon/iconfont.eot');
+  src: url('../Icon/iconfont.eot?#iefix') format('embedded-opentype'), url('../Icon/iconfont.woff') format('woff'), url('../Icon/iconfont.ttf') format('truetype'), url('../Icon/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 26px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon img {
+  width: 13.828125vw;
+  margin-left: 41.6015625vw;
+  margin-top: 22.15277778vh;
+  height: 10.41666667vh;
+  overflow: hidden;
+}
+.searchBorder {
+  width: 42.9296875vw;
+  height: 51px;
+  margin: 0 auto;
+}
+.searchBorder .wordInput {
+  width: 30.7421875vw;
+  height: 51px;
+}
+.searchBorder .wordInput input {
+  width: 30.7421875vw;
+  height: 51px;
+  border: 1px solid #b20200;
+  outline: none;
+}
+.searchBorder #startSearch {
+  height: 53px;
+  line-height: 53px;
+  color: #ffffff;
+  width: 12.1875vw;
+  background: #b20200;
+  font-size: 22px;
+  text-align: center;
+}
+.searchBorder .wordInput,
+.searchBorder #startSearch {
+  float: left;
+}
+#qrCode {
+  height: 11.11111111vh;
+  width: 13.4375vw;
+  margin-top: 32.63888889vh;
+  margin-left: 31.640625vw;
+}
