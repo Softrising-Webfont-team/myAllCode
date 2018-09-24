@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../icon/iconfont.eot');
+  src: url('../icon/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../icon/iconfont.woff') format('woff'),
+  url('../icon/iconfont.ttf') format('truetype'),
+  url('../icon/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:13px;font-style: normal;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+@rate:2/3;
+.tabs{
+  overflow: hidden;
+  padding-top: 17.5vh;
+  width: 220px*@rate;
+  height: 82.5vh;
+  background: #263238;
+  color: #68706a;
+  font-size: 25px*@rate;
+  text-align: center;
+  dl{
+    height: 75px*@rate;
+    overflow: hidden;
+    transition: height 0.3s;
+    dt{
+      font-size: 28px*@rate;
+    }
+    dt,dd{
+      line-height: 75px*@rate;
+      height: 75px*@rate;
+    }
+    dt:hover{
+      background: #3c474c;
+      color: #ffffff;
+    }
+    dd:hover{
+      background: #3c474c;
+      color: #ffffff;
+    }
+  }
+}
+.showParts{
+   margin-left: 220px*@rate;
+   height: 100vh*@rate;
+   top: 0;
+   position: absolute;
+   .titles{
+    border: 1px solid #000000;
+    #datalist{
+      min-height: 90px*@rate;
+      max-height: 90px*@rate;
+      line-height: 90px*@rate;
+      font-size: 25px*@rate;
+      overflow-x: hidden;
+      span{
+        margin-left: 18px;
+      }
+    }
+    #page{
+      font-size: 44px*@rate;
+    }
+   }
+   .details{
+    dl{
+      margin: 20px*@rate;
+      dd{
+        p{
+          text-indent: 2em;
+        }
+      }
+    }
+   }
+}
+
