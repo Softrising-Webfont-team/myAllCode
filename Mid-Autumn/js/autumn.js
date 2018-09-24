@@ -1,100 +1,98 @@
+function addEvent(dom,event,fun){
+	return dom.addEventListener(event,fun);
+}
+//确定序列数
+function getIndex(indexvalue,arr){
+	for(let i = 0; i < arr.length; i++){
+		if(indexvalue = arr[i]){
+			return i;
+		}
+	}
+}
+
 var tabs = document.getElementsByClassName('tabs')[0];
 var dllist = tabs.getElementsByTagName('dl');
 var dtlist = tabs.getElementsByTagName('dt');
 var ddlist = tabs.getElementsByTagName('dd');
 var datalist = document.getElementById('datalist');
 var spanlist = datalist.getElementsByTagName('span');
+var ilist = datalist.getElementsByTagName('i');
 var page = document.getElementById('page');
-
 var details = document.getElementsByClassName('details')[0];
 var ddtail = details.getElementsByTagName('dd');
-
 function bigchose(){
 	for(let i = 0; i < dtlist.length; i++){
-		dtlist[i].onclick = function(){
+		addEvent(dtlist[i],'click',function(e){
 			if(dllist[i].style.height != '200px'){
 				dllist[i].style.height = '200px';
 			}else{
 				dllist[i].style.height = '50px';
 			}
-		}
+			e.stopPropagation();
+		})
 	}
 }
 bigchose()
 
-
-var list = '';  
-
-//创建右部的标题
-function smallchose(){
-	
+function showNav(){
 	for(let i = 0; i < ddlist.length; i++){
-		ddlist[i].onclick = function(){
-			var stry = list.search(i);    //判断字符串里有没有这个数字
-			if(stry == -1){ //如果没有这个数字，就添加到大标题里
-				var para = document.createElement("span");
-				var str1;
-				
-				if(datalist.innerHTML == ''){
-					str1 = ddlist[i].innerHTML;
-				}else{
-					 str1 = ddlist[i].innerHTML + '&nbsp;<i class="iconfont" onclick="deletes()">&#xe768;</i>';
-				}
-				para.innerHTML = str1;
-				datalist.appendChild(para);
-				list += i;
+		addEvent(ddlist[i],'click',function(e){
+			if(ddtail[i].getAttribute('isAdd') =='false'){
+				creatHead(ddlist[i].innerText,i);
+				ddtail[i].setAttribute('isAdd','true');
 			}
-			var k = i + 1;
-			page.innerHTML = '网页' + k;
-			showtails(i);
+			show(i);
+			showHead()
 
-			datachose()
-			// console.log(spanlist.length)
-			// console.log(list)
+			deletes()
 
-			deletes(list)
-			//  console.log(list2)
-			// list = list+ '';
-			// console.log(list)
-		}
-	}
-	
-}
-smallchose()
-
-function datachose(){
-	for(let l = 0; l < spanlist.length ; l++){
-		spanlist[l].onclick = function(){
-			var k1 = l + 1;
-			page.innerHTML = '网页' + k1;
-			showtails(l);
-		}
+		e.stopPropagation();
+		})
 	}
 }
-//删除标题
-function deletes(list){
-	var dels = document.querySelectorAll("i");
-	var x2 = list;
-	for(let i = 0 ; i < dels.length; i++){
-		dels[i].onclick = function(){
-			datalist.removeChild(spanlist[i+1]);
-			// x2 = x2.split(i+1).join('');
-			list = x2.split(i+1).join('');
-			console.log(x2);
-			// return x2;
-		}
-// x2 = dels[i].onclick()
+showNav()
+
+function deletes(){
+	for(let i = 0; i < ilist.length; i++){
+		addEvent(ilist[i],'click',function(e){
+			ddtail[i+1].setAttribute('isAdd','false');
+			ilist[i].style.display = 'none';
+			spanlist[i+1].style.display = 'none';
+		})
 	}
-	// list = x2;
-	// console.log(list)
-	// return list
-} 
+}
 
+function showHead(){
+	for(let i = 0; i < spanlist.length; i++){
+		addEvent(spanlist[i],'click',function(e){
+			var showhaedIndex = spanlist[i].getAttribute('index')
+			show(showhaedIndex);
+		e.stopPropagation();
+		})
+	}
+}
 
-function showtails(i){
+function show(i){
+	var k = parseInt(i) + 1;
+	page.innerHTML = '网页' + k;
 	for(let j = 0; j < ddtail.length; j++){
 		ddtail[j].style.display = 'none';
 	}
 	ddtail[i].style.display = 'block';
+}
+
+function creatHead(text,indexPage){
+	var newSpan = document.createElement("span");
+	var newIcon = document.createElement("i");
+	newIcon.innerHTML = '&nbsp;&#xe768;'
+	newIcon.className = 'iconfont';
+	newSpan.innerText = text;
+	newSpan.setAttribute('index',indexPage);
+	if(datalist.innerHTML !=''){
+		datalist.appendChild(newSpan);
+		datalist.appendChild(newIcon);
+	}else{
+		datalist.appendChild(newSpan);
+	}
 }
 
