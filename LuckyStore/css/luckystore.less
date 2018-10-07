@@ -100,6 +100,9 @@ body{
 			.marginshort{
 				padding-left: 26px*@rate;
 				padding-right: 26px*@rate;
+				height: 60px*@rate;
+				overflow-x: hidden;
+				
 			}
 			padding-left: 33px*@rate;
 			padding-right: 33px*@rate;
@@ -109,6 +112,7 @@ body{
 			border-right: 0.2px solid #546a7b;
 		}
 	}
+	
 	.iconMenu{
 		li{
 			width: 59px*@rate;
@@ -124,6 +128,35 @@ body{
 		float: left;
 	}
 }
+.slidedowns{
+	margin-left: 48.19px;
+	width: 88.21+110.27px;
+	position: relative;
+	z-index: 8;
+	.choose_2{
+		text-align: center;
+		li{
+			height: 60px*@rate;
+			line-height: 60px*@rate;
+			background-color: #3c5569;
+			color: #a4b0b9;
+			border: 0.1px solid #546a7b;
+		}
+		float: left;
+	}
+	#men_2{
+		width: 88.01px;
+		height: 0;
+		overflow-y: hidden;
+	}
+	#women_2{
+		width: 110.07px;
+		left: 88.01px;
+		height: 0;
+		overflow-y: hidden;
+	}
+}
+	
 #slider{
 	height: 441px*@rate;
 	margin-top: 46px*@rate;
@@ -142,7 +175,7 @@ body{
 	#slideBg{
 		position: relative;
 		z-index: 2;
-		width: 4*940px*@rate;
+		width: 5*940px*@rate;
 		height: 441px*@rate;
 		margin-top: 46px*@rate;
 		img{

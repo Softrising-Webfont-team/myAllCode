@@ -1,43 +1,81 @@
 $(document).ready(function(){
-	var index_1 = 0;
+	var indexs = 0;
 	setInterval(function(){
-		if(index_1==3){
+		if(indexs == 3){
 			$("#slideBg").css("left","0px");
-			index_1 = 0;
+			indexs = 0;
 		}else{
 			$("#slideBg").animate({left:"-=626.67px"});
-			index_1++;
+			indexs++;
 		}
-		showButton(index_1)
-	},3000);
-	var buttonClick = function(i){
-		if(i ==0){
-			$("#slideBg").css("left","0px");
-			index_1 = 0;
-			showButton(0)
-		}else if(i == 1){
-			$("#slideBg").css("left","-626.67px");
-			index_1 = 1;
-			showButton(1)
-		}else{
-			$("#slideBg").css("left","-1253.34px");
-			index_1 = 2;
-			showButton(2)
-		}
-	}
-	$("#slideButton li").eq(0).click(function(){
-		buttonClick(0)
-	})
-	$("#slideButton li").eq(1).click(function(){
-		buttonClick(1)
-	})
-	$("#slideButton li").eq(2).click(function(){
-		buttonClick(2)
-	})
-
-	var showButton = function(k){
 		$("#slideButton li").removeClass("on");
-		$("#slideButton li").eq(k).addClass("on");
+		$("#slideButton li").eq(indexs).addClass("on");
+	},3000);
+	var autochange = function(i){
+		if(i ==1){
+			$("#slideBg").animate({left:"+=626.67px"});
+		}
+		if(i == -1){
+			$("#slideBg").animate({left:"-=626.67px"});
+		}
 	}
+//点击小圆点.改变颜色
+	$("#slideButton li").click(function(){
+		$("#slideButton li").removeClass("on");
+		$(this).addClass("on");
+		indexs = $(".on").index();
+		var left_1 = 0;
+		for(let k = 0; k < indexs; k++){
+			 left_1 -= 626.67;
+		}
+		$("#slideBg").css("left",left_1 + "px");
+	})
+//向右	
+	$(".right").click(function(){
+		if(indexs >= 2){
+			indexs = 0;
+			$("#slideBg").css("left","0px");
+		}else{
+			autochange(-1);
+			indexs++;
+		}
+		$("#slideButton li").removeClass("on");
+		$("#slideButton li").eq(indexs).addClass("on");
+	})
+//向左
+	$(".left").click(function(){
+		if(indexs == 0){
+			indexs = 2;
+			$("#slideBg").css("left","-1878.81px");
+		}else{
+			autochange(1);
+			indexs--;
+		}
+		$("#slideButton li").removeClass("on");
+		$("#slideButton li").eq(indexs).addClass("on");
+	})
 
+//下拉 40.19
+	$("#men_1").click(function(){
+		if($("#men_2").css("height")=="0px"){
+			if($("#women_2").css("height")!="0px"){
+				$("#women_2").css({"margin-left":"0px"});
+			}
+			$("#men_2").animate({height:"120.6px"});
+		}else{
+			$("#men_2").animate({height:"0"});
+		}
+		
+	})
+	$("#women_1").click(function(){
+		if($("#women_2").css("height")=="0px"){
+			if($("#men_2").css("height")=="0px"){
+				$("#women_2").css({"margin-left":"88.01px"});
+			}
+			$("#women_2").animate({height:"120.6px"});
+		}else{
+			$("#women_2").animate({height:"0"});
+		}
+		
+	})
 });
