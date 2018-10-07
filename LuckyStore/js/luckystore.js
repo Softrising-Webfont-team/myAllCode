@@ -10,7 +10,6 @@ $(document).ready(function(){
 		}
 		showButton(index_1)
 	},3000);
-
 	var buttonClick = function(i){
 		if(i ==0){
 			$("#slideBg").css("left","0px");
